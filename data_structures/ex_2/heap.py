@@ -1,5 +1,27 @@
 def heapsort(arr):
-  pass
+  """
+  create a heap using Heap().insert and for loop.
+  at this point the first element in the heap should always have the greatest value,
+  the items after will not be in order.  
+  create empty list 
+  could just use sorted, but that is cheating....
+  while loop over heap, add first item then delete it.
+  append adds to end. python function insert will add at any location. 
+  x.insert({location to insert using zero index}, {value to insert})
+  """
+  sc_heap = Heap()
+  answer = []
+
+  for i in arr:
+    sc_heap.insert(i)
+  # print(sc_heap.storage, sc_heap.size, sc_heap.get_max())
+  
+  while sc_heap.get_size() > 0:
+    answer.insert(0, sc_heap.get_max())
+    sc_heap.delete()
+  
+  # print(answer)
+  return answer
 
 class Heap:
   def __init__(self):
