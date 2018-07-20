@@ -1,10 +1,10 @@
 Add your answers to the Algorithms exercises here.
 Exersice I
-*correct answer will be second set
+
 1. O(n)
 2. O(log n)
-3. O(l) O(n^n)
-4. O(log n) O(n log n)
+3. O(n^n)
+4. O(n log n)
 5. O(n^3)
 6. O(n)
 7. O(n)
